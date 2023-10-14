@@ -2,10 +2,6 @@ const { Schema, model } = require('mongoose');
 
 const ShoeSchema = new Schema(
     {
-        ShoeID: {
-            type: Schema.Types.ObjectId,
-            default: new mongoose.Types.ObjectId()
-        },
         Brand: {
             type: String
         },
