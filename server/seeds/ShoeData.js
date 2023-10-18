@@ -2633,8 +2633,8 @@
       "USWomensSize": "13.5",
       "UkSize": "11.5",
       "EuroSize": "46.5",
-      "BoxSize": null,
-      "SoleSize": null,
+      "BoxSize": "29.5",
+      "SoleSize": "29.3",
       "ToeBox": "Pointed",
       "Width": "Wide"
     },
@@ -2646,8 +2646,8 @@
       "USWomensSize": "14",
       "UkSize": "12",
       "EuroSize": "47",
-      "BoxSize": null,
-      "SoleSize": null,
+      "BoxSize": "29.9",
+      "SoleSize": "29.6",
       "ToeBox": "Pointed",
       "Width": "Wide"
     },
@@ -2659,8 +2659,8 @@
       "USWomensSize": "8",
       "UkSize": "6",
       "EuroSize": "39.5",
-      "BoxSize": null,
-      "SoleSize": null,
+      "BoxSize": "24.2",
+      "SoleSize": "23.9",
       "ToeBox": "Pointed",
       "Width": "Narrow"
     },
@@ -2672,8 +2672,8 @@
       "USWomensSize": "8.5",
       "UkSize": "6.5",
       "EuroSize": "40",
-      "BoxSize": null,
-      "SoleSize": null,
+      "BoxSize": "24.6",
+      "SoleSize": "24",
       "ToeBox": "Pointed",
       "Width": "Narrow"
     },
@@ -2685,7 +2685,7 @@
       "USWomensSize": "9",
       "UkSize": "7",
       "EuroSize": "41",
-      "BoxSize": null,
+      "BoxSize": "25.1",
       "SoleSize": "24.5",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2698,7 +2698,7 @@
       "USWomensSize": "9.5",
       "UkSize": "7.5",
       "EuroSize": "41.5",
-      "BoxSize": null,
+      "BoxSize": "25.5",
       "SoleSize": "25.1",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2711,7 +2711,7 @@
       "USWomensSize": "10",
       "UkSize": "8",
       "EuroSize": "42",
-      "BoxSize": null,
+      "BoxSize": "25.9",
       "SoleSize": "25.4",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2724,7 +2724,7 @@
       "USWomensSize": "10.5",
       "UkSize": "8.5",
       "EuroSize": "42.5",
-      "BoxSize": null,
+      "BoxSize": "26.3",
       "SoleSize": "25.8",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2737,7 +2737,7 @@
       "USWomensSize": "11",
       "UkSize": "9",
       "EuroSize": "43",
-      "BoxSize": null,
+      "BoxSize": "26.8",
       "SoleSize": "26.3",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2750,7 +2750,7 @@
       "USWomensSize": "11.5",
       "UkSize": "9.5",
       "EuroSize": "44",
-      "BoxSize": null,
+      "BoxSize": "27.3",
       "SoleSize": "27.0",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2763,7 +2763,7 @@
       "USWomensSize": "12",
       "UkSize": "10",
       "EuroSize": "44.5",
-      "BoxSize": null,
+      "BoxSize": "27.7",
       "SoleSize": "27.3",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2776,7 +2776,7 @@
       "USWomensSize": "12.5",
       "UkSize": "10.5",
       "EuroSize": "45",
-      "BoxSize": null,
+      "BoxSize": "28.3",
       "SoleSize": "27.8",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2789,7 +2789,7 @@
       "USWomensSize": "13",
       "UkSize": "11",
       "EuroSize": "46",
-      "BoxSize": null,
+      "BoxSize": "28.7",
       "SoleSize": "28.2",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2802,8 +2802,8 @@
       "USWomensSize": "13.5",
       "UkSize": "11.5",
       "EuroSize": "46.5",
-      "BoxSize": null,
-      "SoleSize": null,
+      "BoxSize": "29.2",
+      "SoleSize": "28.7",
       "ToeBox": "Pointed",
       "Width": "Narrow"
     },
@@ -2815,7 +2815,7 @@
       "USWomensSize": "14",
       "UkSize": "12",
       "EuroSize": "47",
-      "BoxSize": null,
+      "BoxSize": "29.6",
       "SoleSize": "29.0",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2828,8 +2828,8 @@
       "USWomensSize": "14.5",
       "UkSize": "12.5",
       "EuroSize": "48",
-      "BoxSize": null,
-      "SoleSize": null,
+      "BoxSize": "30.3",
+      "SoleSize": "30.1",
       "ToeBox": "Pointed",
       "Width": "Narrow"
     },
@@ -2841,7 +2841,7 @@
       "USWomensSize": "15",
       "UkSize": "13",
       "EuroSize": "48.5",
-      "BoxSize": null,
+      "BoxSize": "30.5",
       "SoleSize": "29.8",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2854,7 +2854,7 @@
       "USWomensSize": "16",
       "UkSize": "14",
       "EuroSize": "49.5",
-      "BoxSize": null,
+      "BoxSize": "30.7",
       "SoleSize": "30.2",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2867,8 +2867,8 @@
       "USWomensSize": "5",
       "UkSize": "3",
       "EuroSize": "35.5",
-      "BoxSize": null,
-      "SoleSize": null,
+      "BoxSize": "21.6",
+      "SoleSize": "21.1",
       "ToeBox": "Pointed",
       "Width": "Narrow"
     },
@@ -2880,7 +2880,7 @@
       "USWomensSize": "5.5",
       "UkSize": "3.5",
       "EuroSize": "36",
-      "BoxSize": null,
+      "BoxSize": "22.1",
       "SoleSize": "21.7",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2893,7 +2893,7 @@
       "USWomensSize": "6",
       "UkSize": "4",
       "EuroSize": "37",
-      "BoxSize": null,
+      "BoxSize": "22.7",
       "SoleSize": "22.1",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2906,7 +2906,7 @@
       "USWomensSize": "6.5",
       "UkSize": "4.5",
       "EuroSize": "37.5",
-      "BoxSize": null,
+      "BoxSize": "23.1",
       "SoleSize": "22.5",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2919,7 +2919,7 @@
       "USWomensSize": "7",
       "UkSize": "5",
       "EuroSize": "38",
-      "BoxSize": null,
+      "BoxSize": "23.6",
       "SoleSize": "23.0",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2932,7 +2932,7 @@
       "USWomensSize": "7.5",
       "UkSize": "5.5",
       "EuroSize": "39",
-      "BoxSize": null,
+      "BoxSize": "24",
       "SoleSize": "23.4",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2945,7 +2945,7 @@
       "USWomensSize": "8",
       "UkSize": "6",
       "EuroSize": "39.5",
-      "BoxSize": null,
+      "BoxSize": "24.5",
       "SoleSize": "23.9",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2958,7 +2958,7 @@
       "USWomensSize": "8.5",
       "UkSize": "6.5",
       "EuroSize": "40",
-      "BoxSize": null,
+      "BoxSize": "24.9",
       "SoleSize": "24.3",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2971,7 +2971,7 @@
       "USWomensSize": "9",
       "UkSize": "7",
       "EuroSize": "41",
-      "BoxSize": null,
+      "BoxSize": "25.2",
       "SoleSize": "24.7",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2984,7 +2984,7 @@
       "USWomensSize": "9.5",
       "UkSize": "7.5",
       "EuroSize": "41.5",
-      "BoxSize": null,
+      "BoxSize": "25.7",
       "SoleSize": "25.2",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -2997,7 +2997,7 @@
       "USWomensSize": "10",
       "UkSize": "8",
       "EuroSize": "42",
-      "BoxSize": null,
+      "BoxSize": "26.1",
       "SoleSize": "25.7",
       "ToeBox": "Pointed",
       "Width": "Narrow"
@@ -3010,8 +3010,8 @@
       "USWomensSize": "10.5",
       "UkSize": "8.5",
       "EuroSize": "42.5",
-      "BoxSize": null,
-      "SoleSize": null,
+      "BoxSize": "26.5",
+      "SoleSize": "26.1",
       "ToeBox": "Pointed",
       "Width": "Narrow"
     }
