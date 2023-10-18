@@ -1035,7 +1035,7 @@
       "UkSize": "2.5",
       "EuroSize": "35",
       "BoxSize": "21.5",
-      "SoleSize": null,
+      "SoleSize": "21.2",
       "ToeBox": "Round",
       "Width": "Narrow"
     },
@@ -2465,7 +2465,7 @@
       "UkSize": "5",
       "EuroSize": "38",
       "BoxSize": "23.7",
-      "SoleSize": ,
+      "SoleSize": "23.5",
       "ToeBox": "Pointed",
       "Width": "Wide"
     },
@@ -2478,7 +2478,7 @@
       "UkSize": "5.5",
       "EuroSize": "38.5",
       "BoxSize": "24.2",
-      "SoleSize": "23.8",
+      "SoleSize": "24",
       "ToeBox": "Pointed",
       "Width": "Wide"
     },
