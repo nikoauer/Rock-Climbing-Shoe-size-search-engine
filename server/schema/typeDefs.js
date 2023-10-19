@@ -3,12 +3,12 @@ type Shoes {
     _id: ID!
     Brand: String
     Model: String
-    USMensSize: Int
-    USWomensSize: Int
-    UkSize: Int
-    EuroSize: Int
-    BoxSize: Int
-    SoleSize: Int
+    USMensSize: Float
+    USWomensSize: Float
+    UkSize: Float
+    EuroSize: Float
+    BoxSize: Float
+    SoleSize: Float
     ToeBox: String
     Width: String
   }
