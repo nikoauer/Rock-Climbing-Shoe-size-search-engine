@@ -15,9 +15,7 @@ type Shoes {
 
   type Query {
     shoes: [Shoes]
-    shoesbySize (SoleSize: Int!): Shoes
   }
-
 `;
 
 module.exports = typeDefs;

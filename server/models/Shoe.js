@@ -8,6 +8,9 @@ const ShoeSchema = new Schema(
         Model: {
             type: String
         },
+        Details: {
+            type: String
+        },
         USMensSize: {
             type: Number
         },
