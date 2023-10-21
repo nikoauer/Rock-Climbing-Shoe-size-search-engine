@@ -62,7 +62,7 @@ const SignupForm = () => {
           <Form.Label htmlFor='username'>Username</Form.Label>
           <Form.Control
             type='text'
-            placeholder='Your username'
+            placeholder='Username'
             name='username'
             onChange={handleInputChange}
             value={userFormData.username}
@@ -75,7 +75,7 @@ const SignupForm = () => {
           <Form.Label htmlFor='email'>Email</Form.Label>
           <Form.Control
             type='email'
-            placeholder='Your email address'
+            placeholder='Email Address'
             name='email'
             onChange={handleInputChange}
             value={userFormData.email}
@@ -88,7 +88,7 @@ const SignupForm = () => {
           <Form.Label htmlFor='password'>Password</Form.Label>
           <Form.Control
             type='password'
-            placeholder='Your password'
+            placeholder='Password'
             name='password'
             onChange={handleInputChange}
             value={userFormData.password}
@@ -96,12 +96,15 @@ const SignupForm = () => {
           />
           <Form.Control.Feedback type='invalid'>Password is required!</Form.Control.Feedback>
         </Form.Group>
+        <div className='text-center'>
         <Button
           disabled={!(userFormData.username && userFormData.email && userFormData.password)}
           type='submit'
-          variant='success'>
+          variant='primary'
+          >
           Submit
         </Button>
+        </div>
       </Form>
     </>
   );

@@ -10,7 +10,7 @@ const NavbarApp = () => {
 
   return (
     <>
-      <Navbar variant="underline" bg="primary" style={{ padding: "5px" }}>
+      <Navbar variant="underline" style={{ padding: "5px", backgroundColor: "#fac637" }}>
         <Container>
           <Navbar.Brand>Climbing Shoes</Navbar.Brand>
         </Container>
@@ -35,12 +35,13 @@ const NavbarApp = () => {
         show={showModal}
         onHide={() => setShowModal(false)}
         aria-labelledby="signup-modal"
+        style={{backgroundColor: "#fac637"}}
       >
         {/* tab container to do either signup or login component */}
         <Tab.Container defaultActiveKey="login">
           <Modal.Header closeButton>
             <Modal.Title id="signup-modal">
-              <Nav variant="pills">
+              <Nav variant="tabs">
                 <Nav.Item>
                   <Nav.Link eventKey="login">Login</Nav.Link>
                 </Nav.Item>
