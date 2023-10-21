@@ -1,40 +1,34 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Link } from "react-router-dom";
-import SignUpForm from "./SignupForm";
-import LoginForm from "./LoginForm";
+// import SignUpForm from "./SignupForm";
+// import LoginForm from "./LoginForm";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
 
-const Navbar = () => {
-  <>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-        <Nav.Link as={Link} to='/'>
-            WebSiteName
-          </Nav.Link>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active">
-          <Nav.Link as={Link} to='/'>Home</Nav.Link>
-          </li>
-            <Nav.Link as={Link} to='/savedshoes'>Saved Shoes</Nav.Link>
-          <li>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="">
-              <span class="glyphicon glyphicon-user"></span> Sign Up
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="glyphicon glyphicon-log-in"></span> Login
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </>;
-};
+const NavbarApp = () => {
 
-export default Navbar;
+
+
+    return(
+        <Navbar variant="underline" bg="primary" style={{padding: "5px"}}>
+            <Container>
+                <Navbar.Brand>Climbing Shoes</Navbar.Brand>
+            </Container>
+            <Nav className="ml-auto" variant="underline">
+                <Nav.Item>
+                    <Nav.Link as={Link} to='/' >Home</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link as={Link} to='/savedshoes'>Saved</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Nav.Link as={Link} to='/'>Login</Nav.Link>
+                </Nav.Item>
+            </Nav>
+        </Navbar>
+        // Hidden Modal for Login/Signup
+  );
+}
+
+export default NavbarApp;
