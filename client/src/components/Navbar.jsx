@@ -1,34 +1,69 @@
 // import { useState } from "react";
 import { Link } from "react-router-dom";
-// import SignUpForm from "./SignupForm";
-// import LoginForm from "./LoginForm";
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
+import { useState } from "react";
+import SignUpForm from "./SignupForm";
+import LoginForm from "./LoginForm";
+import { Container, Navbar, Nav, Modal, Tab } from "react-bootstrap";
 
 const NavbarApp = () => {
+  const [showModal, setShowModal] = useState(false);
 
-
-
-    return(
-        <Navbar variant="underline" bg="primary" style={{padding: "5px"}}>
-            <Container>
-                <Navbar.Brand>Climbing Shoes</Navbar.Brand>
-            </Container>
-            <Nav className="ml-auto" variant="underline">
+  return (
+    <>
+      <Navbar variant="underline" bg="primary" style={{ padding: "5px" }}>
+        <Container>
+          <Navbar.Brand>Climbing Shoes</Navbar.Brand>
+        </Container>
+        <Nav className="ml-auto" variant="underline">
+          <Nav.Item>
+            <Nav.Link as={Link} to="/">
+              Home
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link as={Link} to="/savedshoes">
+              Saved
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link onClick={() => setShowModal(true)}>Login</Nav.Link>
+          </Nav.Item>
+        </Nav>
+      </Navbar>
+      <Modal
+        size="lg"
+        show={showModal}
+        onHide={() => setShowModal(false)}
+        aria-labelledby="signup-modal"
+      >
+        {/* tab container to do either signup or login component */}
+        <Tab.Container defaultActiveKey="login">
+          <Modal.Header closeButton>
+            <Modal.Title id="signup-modal">
+              <Nav variant="pills">
                 <Nav.Item>
-                    <Nav.Link as={Link} to='/' >Home</Nav.Link>
+                  <Nav.Link eventKey="login">Login</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link as={Link} to='/savedshoes'>Saved</Nav.Link>
+                  <Nav.Link eventKey="signup">Sign Up</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link as={Link} to='/'>Login</Nav.Link>
-                </Nav.Item>
-            </Nav>
-        </Navbar>
-        // Hidden Modal for Login/Signup
+              </Nav>
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Tab.Content>
+              <Tab.Pane eventKey="login">
+                <LoginForm handleModalClose={() => setShowModal(false)} />
+              </Tab.Pane>
+              <Tab.Pane eventKey="signup">
+                <SignUpForm handleModalClose={() => setShowModal(false)} />
+              </Tab.Pane>
+            </Tab.Content>
+          </Modal.Body>
+        </Tab.Container>
+      </Modal>
+    </>
   );
-}
+};
 
 export default NavbarApp;
