@@ -20,6 +20,7 @@ const userSchema = new Schema(
         password: {
             type: String,
             required: true,
+            minlength: 6,
         },
         savedShoes: [shoeSchema],
     },
@@ -28,7 +29,7 @@ const userSchema = new Schema(
             virtuals: true,
         }
     }
-):
+);
 
 //hash the password before saving it to the db
 userSchema.pre('save', async function (next) {

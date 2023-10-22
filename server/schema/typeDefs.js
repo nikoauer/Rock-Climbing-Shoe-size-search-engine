@@ -13,6 +13,15 @@ type Shoes {
     Width: String
   }
 
+  type User {
+    id: ID!
+    username: String!
+    email: String!
+    password: String!
+    savedShoes: [Shoes]!
+
+  }
+
   type Query {
     shoes: [Shoes]
   }
