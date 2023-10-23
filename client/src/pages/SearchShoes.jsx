@@ -1,20 +1,20 @@
-
+import Container from 'react-bootstrap/Container';
 
 export default function SearchShoes() {
     return(
 <>
-<div>
+<div className="text-center" id="landingpage">
 <h1>Looking for your next Shoe to crush your project?</h1>
-<h4>Simply input the lenght of your foot into the search bar down below to find the perfect fit</h4>
+<h5>Simply input the length of your foot to find the perfect shoe</h5>
 </div>
-<div className="main-search-input-wrap">
-       <div className="main-search-input fl-wrap">
-            <div className="main-search-input-item">
-                <input type="text"  value="" placeholder="Search for shoes"></input>
-            </div>
-        <button className="main-search-button">Search</button>
+<Container fluid>
+<form className="p-3">
+    <div className="col-12 col-md-8 col-sm-6 container">
+        <input id="search-bar"></input>
+        <button className="fa-solid fa-magnifying-glass" id="search-btn"></button>
     </div>
-</div>
+</form>
+</Container>
 </>
     )
 }
