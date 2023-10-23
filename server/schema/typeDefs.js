@@ -19,7 +19,6 @@ type Shoes {
     email: String!
     password: String!
     savedShoes: [Shoes]!
-
   }
 
   type Query {
