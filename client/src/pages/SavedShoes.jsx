@@ -1,4 +1,5 @@
 export default function SavedShoes() {
-    <h1>hellow world</h1>
-
+    return (
+        <h1>Saved Shoes page</h1>
+    )
 }

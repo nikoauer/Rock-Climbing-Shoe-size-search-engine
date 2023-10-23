@@ -10,7 +10,7 @@ const NavbarApp = () => {
 
   return (
     <>
-      <Navbar variant="underline" style={{ padding: "5px", backgroundColor: "#fac637" }}>
+      <Navbar variant="underline" style={{ padding: "5px", backgroundColor: "#ffa200" }}>
         <Container>
           <Navbar.Brand>Climbing Shoes</Navbar.Brand>
         </Container>

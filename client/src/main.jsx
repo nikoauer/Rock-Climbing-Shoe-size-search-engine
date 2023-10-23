@@ -6,6 +6,8 @@ import Home from './pages/SearchShoes'
 import SavedShoes from './pages/SavedShoes'
 import Error from './pages/Error'
 
+import './stylesheet/SearchShoes.css'
+
 import App from './App.jsx'
 
 const router = createBrowserRouter([
