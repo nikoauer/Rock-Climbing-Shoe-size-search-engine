@@ -6,6 +6,7 @@ module.exports = {
     //signs up a new user
     async signupUser({ body }, res) {
         const user = await User.create(body);
+        console.log(body)
 
         if (!user){
             return res.status(400).json({message: 'Something went wrong with signing up!'});

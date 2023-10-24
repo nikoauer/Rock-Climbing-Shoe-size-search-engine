@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
 import { signupUser } from '../utils/API';
-// import Auth from '../utils/auth';
+import { Error } from 'mongoose';
+import Auth from '../utils/auth';
 
 const SignupForm = () => {
   // set initial form state
@@ -20,7 +21,7 @@ const SignupForm = () => {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
-    // check if form has everything (as per react-bootstrap docs)
+    // check if form has everything 
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
@@ -31,12 +32,12 @@ const SignupForm = () => {
       const response = await signupUser(userFormData);
 
       if (!response.ok) {
-        throw new Error('something went wrong!');
+        throw new Error('something went wrong!', Error);
       }
 
-      // const { token, user } = await response.json();
-      // console.log(user);
-      // Auth.login(token);
+      const { token, user } = await response.json();
+      console.log(user);
+      Auth.login(token);
     } catch (err) {
       console.error(err);
       setShowAlert(true);

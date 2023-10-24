@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const {signupUser, loginUser} = require('../../config/connection');
+const { signupUser, loginUser } = require('../../controllers/userControllers');
 
-const { auth } = require('../../utils/auth')
+const { authMiddleware } = require('../../utils/auth')
 
-router.route('/signup').post(signupUser).put(auth)
+router.route('/signup').post(signupUser).put(authMiddleware)
 
 router.route('/login').post(loginUser)
 

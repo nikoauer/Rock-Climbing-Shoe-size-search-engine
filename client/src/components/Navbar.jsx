@@ -1,18 +1,24 @@
-// import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import SignUpForm from "./SignupForm";
 import LoginForm from "./LoginForm";
 import { Container, Navbar, Nav, Modal, Tab } from "react-bootstrap";
+import Auth from '../utils/auth';
+import logo from '../assets/ROCKFIT.svg'
 
 const NavbarApp = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <>
-      <Navbar variant="underline" style={{ padding: "10px", backgroundColor: "#ffa200" }}>
+      <Navbar variant="underline" style={{ padding: "0px", backgroundColor: "#ffa200" }}>
         <Container>
-          <Navbar.Brand>Rock Fit</Navbar.Brand>
+          <Navbar.Brand>
+            <img src={logo} 
+            width="150"
+            height=""
+            alt="Rockfit Logo" />
+          </Navbar.Brand>
         </Container>
         <Nav className="ml-auto" variant="underline">
           <Nav.Item>
@@ -21,13 +27,24 @@ const NavbarApp = () => {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} to="/savedshoes">
-              Saved
+            <Nav.Link as={Link} to="/faq">
+              FAQ
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          {Auth.loggedIn() ? (
+            <>
+              <Nav.Item>
+                <Nav.Link as={Link} to="/savedshoes">Saved</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
+              </Nav.Item>
+            </>
+          ) : (
+            <Nav.Item>
             <Nav.Link onClick={() => setShowModal(true)}>Login</Nav.Link>
           </Nav.Item>
+          )}
         </Nav>
       </Navbar>
       <Modal
