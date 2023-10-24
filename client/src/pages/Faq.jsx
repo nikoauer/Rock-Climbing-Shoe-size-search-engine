@@ -70,6 +70,26 @@ export default function faq() {
             </Card>
             <Card className="card-box">
               <Card.Header>
+                <h5>How do I measure my foot?</h5>
+              </Card.Header>
+              <CardBody>
+                <CardText>
+                  To measure your foot, first, grab a piece of paper and a pen.
+                  Go stand next to a wall and put your paper up against the
+                  wall. Stand on the paper, with your heel against the wall, and
+                  mark the top of your big toe with the pen. Once you have done
+                  this, repeat it again with the other foot (the chances are
+                  your feet aren’t going to be the exact same size). Next, grab
+                  a ruler and measure the distance from the edge of the paper to
+                  your big toe mark on your largest foot. Now you have found
+                  your mondopoint. Now input your measurement in centermeters
+                  into our calculator and you should recieve a list of options
+                  that may suit your foot.
+                </CardText>
+              </CardBody>
+            </Card>
+            <Card className="card-box">
+              <Card.Header>
                 <h5>Will my shoes stretch?</h5>
               </Card.Header>
               <CardBody>
@@ -163,10 +183,22 @@ export default function faq() {
             </Card>
             <Card className="card-box">
               <Card.Header>
-                <h5>Will my shoes stretch?</h5>
+                <h5>
+                  Is there a difference between high volume and low volume
+                  shoes?
+                </h5>
               </Card.Header>
               <CardBody>
-                <CardText></CardText>
+                <CardText>
+                  Since many men prefer the fit of “women’s” models and vice
+                  versa, climbing companies are starting to shift away from
+                  “men” and “women” labeling to using more descriptive titles
+                  such as low volume and high volume or narrow vs wide. High
+                  volume: If your foot has a medium to wide width and/or a high
+                  arch, as well as a medium to wide heel, you have a high-volume
+                  foot. Low volume: If you have a narrow, slender foot and a
+                  flat arch, with a narrow heel, you have a low-volume foot.
+                </CardText>
               </CardBody>
             </Card>
           </Col>
