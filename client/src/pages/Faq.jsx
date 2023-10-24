@@ -30,7 +30,7 @@ export default function faq() {
               climbing shoe, identify your size and fit, and what else you need
               to consider when choosing a shoe that's right for you.
             </p>
-            <Card>
+            <Card className="card-box">
               <Card.Header>
                 <h5>How tight should climbing shoes be at first?</h5>
               </Card.Header>
@@ -51,7 +51,7 @@ export default function faq() {
                 </CardText>
               </CardBody>
             </Card>
-            <Card>
+            <Card className="card-box">
               <Card.Header>
                 <h5>Why are curled toes important?</h5>
               </Card.Header>
@@ -68,7 +68,7 @@ export default function faq() {
                 </CardText>
               </CardBody>
             </Card>
-            <Card>
+            <Card className="card-box">
               <Card.Header>
                 <h5>Will my shoes stretch?</h5>
               </Card.Header>
@@ -93,7 +93,7 @@ export default function faq() {
                 </CardText>
               </CardBody>
             </Card>
-            <Card>
+            <Card className="card-box">
               <Card.Header>
                 <h5>Are climbing all the same when it comes to sizing?</h5>
               </Card.Header>
@@ -116,7 +116,7 @@ export default function faq() {
                 </CardText>
               </CardBody>
             </Card>
-            <Card>
+            <Card className="card-box">
               <Card.Header>
                 <h5>Are some shoes better for some disciplines of climbing</h5>
               </Card.Header>
@@ -137,7 +137,7 @@ export default function faq() {
                 </CardText>
               </CardBody>
             </Card>
-            <Card>
+            <Card className="card-box">
               <Card.Header>
                 <h5>How do I know if my climbing shoe is the right size?</h5>
               </Card.Header>
@@ -161,7 +161,7 @@ export default function faq() {
                 </CardText>
               </CardBody>
             </Card>
-            <Card>
+            <Card className="card-box">
               <Card.Header>
                 <h5>Will my shoes stretch?</h5>
               </Card.Header>

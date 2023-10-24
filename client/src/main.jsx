@@ -8,6 +8,7 @@ import Error from './pages/Error';
 import Faq from './pages/Faq';
 
 import './stylesheet/SearchShoes.css';
+import './stylesheet/faq.css'
 
 import App from './App.jsx';
 
