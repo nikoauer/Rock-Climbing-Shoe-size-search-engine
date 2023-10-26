@@ -14,15 +14,24 @@ type Shoes {
   }
 
   type User {
-    id: ID!
+    _id: ID!
     username: String!
     email: String!
     password: String!
-    savedShoes: [Shoes]!
   }
 
   type Query {
     shoes: [Shoes]
+  }
+
+  type Auth {
+    token: ID!
+    user: User
+  }
+
+  type Mutation {
+    signup(username: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
   }
 `;
 

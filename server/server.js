@@ -4,7 +4,8 @@ const path = require('path');
 const { typeDefs, resolvers } = require("./schema/index");
 const { ApolloServer } = require("@apollo/server");
 const { expressMiddleware } = require("@apollo/server/express4");
-const routes = require('./routes/index')
+const { authMiddleware } = require("./utils/auth");
+const dotnev = require('dotenv').config()
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -21,7 +22,9 @@ const startApolloServer = async () => {
   app.use(express.urlencoded({ extended: false }));
   app.use(express.json());
 
-  app.use('/graphql', expressMiddleware(server));
+  app.use('/graphql', expressMiddleware(server, {
+    context: authMiddleware
+  }));
 
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/dist')));
@@ -30,8 +33,6 @@ const startApolloServer = async () => {
       res.sendFile(path.join(__dirname, '../client/dist/index.html'));
     });
   }
-
-  app.use(routes);
 
   db.once("open", () => {
     app.listen(PORT, () => {

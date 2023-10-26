@@ -24,11 +24,11 @@ const userSchema = new Schema(
         },
         // savedShoes: [shoeSchema],
     },
-    {
-        toJSON: {
-            virtuals: true,
-        }
-    }
+    // {
+    //     toJSON: {
+    //         virtuals: true,
+    //     }
+    // }
 );
 
 //hash the password before saving it to the db
