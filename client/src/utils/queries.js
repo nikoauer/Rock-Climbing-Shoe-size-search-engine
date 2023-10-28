@@ -5,9 +5,13 @@ query GetShoesBySize($size: Float!) {
     getShoesBySize(size: $size) {
       Model
       Brand
+      ToeBox
       SoleSize
       _id
       Width
+      Details
+      USMensSize
+      USWomensSize
     }
   }
 `;

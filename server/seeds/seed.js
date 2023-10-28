@@ -8,7 +8,7 @@ const seedDatabase = async () => {
     connection.once('open', async () => {
         console.log("Connected! Trying to seed Data!");
 
-        await connection.dropCollection("Shoes");
+        await Shoes.deleteMany({});
     
         await Shoes.insertMany(ShoeData);
     
