@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Row, Col, Alert, ProgressBar, Card } from "react-bootstrap";
+import { Container, Row, Col, Alert, Card } from "react-bootstrap";
 import { useLazyQuery } from "@apollo/client";
 import { GET_SHOES_BY_SIZE } from "../utils/queries";
 
@@ -8,6 +8,7 @@ import { GET_SHOES_BY_SIZE } from "../utils/queries";
 export default function SearchShoes() {
   const [searchInput, setSearchInput] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [searchPerformed, setSearchPerformed] = useState(false);
 
   const [getShoesBySize, { loading, data }] = useLazyQuery(GET_SHOES_BY_SIZE);
 
@@ -28,6 +29,7 @@ export default function SearchShoes() {
   const handleSubmit = (event) => {
     event.preventDefault();
     getShoesBySize({ variables: { size: parseFloat(searchInput) } });
+    setSearchPerformed(true)
   };
   return (
     <>
@@ -67,9 +69,8 @@ export default function SearchShoes() {
       <Container>
         <Row className="justify-content-md-center">
           <Col md="auto">
-            {loading && <ProgressBar animated now={50} />}
-            {!loading &&
-              data &&
+            {loading && <p>Loading...</p>}
+            {!loading && data && data.getShoesBySize.length > 0 ? (
               data.getShoesBySize.map(
                 ({
                   Model,
@@ -82,19 +83,24 @@ export default function SearchShoes() {
                   USWomensSize,
                   USMensSize,
                 }) => (
-                    <Card key={_id} id="Shoe-cards">
-                        <Card.Header id="title">Brand: {Brand} <br /> Model: {Model}</Card.Header>
-                      <Card.Body className="body" id="information">
-                        <Card.Text id="contents">Sole Size: {SoleSize} centimeters</Card.Text>
-                        <Card.Text id="contents">US Men's Size: {USMensSize}</Card.Text>
-                        <Card.Text id="contents">US Women's Size: {USWomensSize}</Card.Text>
-                        <Card.Text id="contents">Width: {Width}</Card.Text>
-                        <Card.Text id="contents">ToeBox: {ToeBox}</Card.Text>
-                        <Card.Text id="details">Details: {Details}</Card.Text>
-                      </Card.Body>
-                    </Card>
+                  <Card key={_id} id="Shoe-cards">
+                    <Card.Header id="title">Brand: {Brand} <br /> Model: {Model}</Card.Header>
+                    <Card.Body className="body" id="information">
+                      <Card.Text id="contents">Sole Size: {SoleSize} centimeters</Card.Text>
+                      <Card.Text id="contents">US Men's Size: {USMensSize}</Card.Text>
+                      <Card.Text id="contents">US Women's Size: {USWomensSize}</Card.Text>
+                      <Card.Text id="contents">Width: {Width}</Card.Text>
+                      <Card.Text id="contents">ToeBox: {ToeBox}</Card.Text>
+                      <Card.Text id="details">Details: {Details}</Card.Text>
+                    </Card.Body>
+                  </Card>
                 )
-              )}
+              )
+            ) : ( searchPerformed &&
+              <Alert variant="warning" className="text-center" id="alert">
+                Sorry, no shoes were found in our database that match this size
+              </Alert>
+            )}
           </Col>
         </Row>
       </Container>
