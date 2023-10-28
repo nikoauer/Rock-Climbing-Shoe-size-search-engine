@@ -1,36 +1,35 @@
-// import { useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-
-
+import { useState } from 'react';
+import { Container, Row, Col, Alert } from 'react-bootstrap';
+import { useLazyQuery } from '@apollo/client';
+import { GET_SHOES_BY_SIZE } from '../utils/queries';
 
 // import Auth from '../utils/auth';
 
 export default function SearchShoes() {
 
-    // const [searchInput, setSearchInput] = useState('');
-    // const [errorMessage, setErrorMessage] = useState('');
+    const [searchInput, setSearchInput] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
-    // const handleInputChange = async (event) => {
-    //     event.preventDefault();
+    const [getShoesBySize, {loading, data}] = useLazyQuery(GET_SHOES_BY_SIZE) 
 
-    //     const inputValue = event.target.value;
+    const handleInputChange = async (event) => {
+        event.preventDefault();
 
-    //     const regex = /^[0-9.]+$/;
+        const inputValue = event.target.value;
 
-    //     if(regex.test(inputValue) || inputValue === '') {
-    //         setSearchInput(inputValue);
-    //         setErrorMessage('');
-    //         try {
-                
-    //             }
-    //         } catch (error) {
-    //             console.log(error)
-    //         }
-    //     } else {
-    //         setErrorMessage('Please enter only numbers and decimal points.');
-    //     }
-    // }
+        const regex = /^[0-9.]+$/;
 
+        if(regex.test(inputValue) || inputValue === '') {
+            setSearchInput(inputValue);
+            setErrorMessage('');
+        } else {
+            setErrorMessage('Please enter only numbers and decimal points.');
+        }
+    }
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        getShoesBySize({ variables: { size: parseFloat(searchInput) } });
+      };
     return(
 <>
 <div className="text-center" id="landingpage">
@@ -40,23 +39,31 @@ export default function SearchShoes() {
 <Container fluid>
 <form className="p-3">
     <div className="col-12 col-md-8 col-sm-6 container">
-        {/* <input 
+        <input 
         id="search-bar"
         type="text"
         value={searchInput}
-        onChange={handleInputChange}></input> */}
-        <button className="fa-solid fa-magnifying-glass" id="search-btn" type='submit'></button>
+        onChange={handleInputChange}></input>
+        <button className="fa-solid fa-magnifying-glass" id="search-btn" type='submit' onClick={handleSubmit}></button>
     </div>
 </form> 
 <Container>
     <Row className="justify-content-md-center">
         <Col md="auto">
-            {/* {errorMessage && <Alert variant="warning" className="text-center" id="alert">{errorMessage}</Alert>} */}
+            {errorMessage && <Alert variant="warning" className="text-center" id="alert">{errorMessage}</Alert>}
         </Col>
     </Row>
 </Container>
 </Container>
-
+{loading && <p>Loading...</p>}
+      {!loading && data && data.getShoesBySize.map(({ Model, Brand, SoleSize, _id, Width }) => (
+        <div key={_id}>
+          <p>Model: {Model}</p>
+          <p>Brand: {Brand}</p>
+          <p>Sole Size: {SoleSize}</p>
+          <p>Width: {Width}</p>
+        </div>
+      ))}
 </>
     )
 }

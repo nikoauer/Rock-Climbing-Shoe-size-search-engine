@@ -22,6 +22,7 @@ type Shoes {
 
   type Query {
     shoes: [Shoes]
+    getShoesBySize(size: Float!): [Shoes]
   }
 
   type Auth {

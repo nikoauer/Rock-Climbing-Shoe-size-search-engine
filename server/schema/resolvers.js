@@ -3,11 +3,16 @@ const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = { 
     Query: {
+      getShoesBySize: async (_, args) => {
+        const { size } = args
+        const shoes = await Shoes.find({ SoleSize: size });
+        return shoes;
+      },
       shoes: async () => {
-        return await Shoes.find({})
-      }  
+        const shoes = await Shoes.find({})
+        return shoes;
+      }
     },
-
     Mutation: {
       signup: async (_, { username, email, password }) => {
         try {
