@@ -83,17 +83,14 @@ export default function SearchShoes() {
                   USMensSize,
                 }) => (
                     <Card key={_id} id="Shoe-cards">
-                      <Card.Body className="body">
-                        <Card.Title>Brand: {Brand}</Card.Title>
-                        <Card.Subtitle>Model: {Model}</Card.Subtitle>
-                        <br />
-                        <Card.Text>Sole Size: {SoleSize} centimeters</Card.Text>
-                        <Card.Text>US Men's Size: {USMensSize}</Card.Text>
-                        <Card.Text>US Women's Size: {USWomensSize}</Card.Text>
-                        <Card.Text>Width: {Width}</Card.Text>
-                        <Card.Text>ToeBox: {ToeBox}</Card.Text>
-                        <Card.Subtitle>Details: <br /></Card.Subtitle>
-                        <p>{Details}</p>
+                        <Card.Header id="title">Brand: {Brand} <br /> Model: {Model}</Card.Header>
+                      <Card.Body className="body" id="information">
+                        <Card.Text id="contents">Sole Size: {SoleSize} centimeters</Card.Text>
+                        <Card.Text id="contents">US Men's Size: {USMensSize}</Card.Text>
+                        <Card.Text id="contents">US Women's Size: {USWomensSize}</Card.Text>
+                        <Card.Text id="contents">Width: {Width}</Card.Text>
+                        <Card.Text id="contents">ToeBox: {ToeBox}</Card.Text>
+                        <Card.Text id="details">Details: {Details}</Card.Text>
                       </Card.Body>
                     </Card>
                 )

@@ -1,39 +1,46 @@
-body{
-    background-color: #ffffff;
-  }
-  
-  #search-bar {
-    height: 46px;
-    border-radius: 48px;
-    border: 0.5px solid rgb(157, 157, 157);
-    width: 100%;
-    padding-right: 40px;
-    padding-left: 10px;
+body {
+  background-color: #ffffff;
+}
+
+#search-bar {
+  height: 46px;
+  border-radius: 48px;
+  border: 0.5px solid rgb(157, 157, 157);
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 10px;
 }
 
 #search-btn {
-    font-size: 1.1em;
-    position: absolute;
-    height: 46px;
-    width: 46px;
-    border-radius: 48px;
-    border: none;
-    background-color: #ffb600;
-    margin-left: 5px;
-    transition-duration: 0.4s;
-} 
+  font-size: 1.1em;
+  position: absolute;
+  height: 46px;
+  width: 46px;
+  border-radius: 48px;
+  border: none;
+  background-color: #ffb600;
+  margin-left: 5px;
+  transition-duration: 0.4s;
+}
 
 #search-btn:hover {
-    background-color: #ffb600;
-    color: #ffffff;
+  background-color: #ffb600;
+  color: #ffffff;
 }
 
 #landingpage {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 #Shoe-cards {
-    margin-top: 16px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #e2e2e2;
+  margin-top: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #e2e2e2;
+}
+#title {
+    font-size: 1.2em;
+}
+
+#information {
+    font-size: 1em;
 }
