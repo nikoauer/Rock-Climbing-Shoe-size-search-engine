@@ -3,6 +3,7 @@ type Shoes {
     _id: ID!
     Brand: String
     Model: String
+    Photo: String
     Details: String
     USMensSize: Float
     USWomensSize: Float

@@ -34,6 +34,7 @@ body {
 
 #Shoe-cards {
   margin-top: 16px;
+  margin-bottom: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #e2e2e2;
 }
@@ -43,4 +44,9 @@ body {
 
 #information {
     font-size: 1em;
+}
+
+#subtitle{
+  font-weight: 700;
+  padding-bottom: 10px;
 }

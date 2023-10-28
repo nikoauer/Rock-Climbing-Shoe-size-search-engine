@@ -12,6 +12,7 @@ query GetShoesBySize($size: Float!) {
       Details
       USMensSize
       USWomensSize
+      Photo
     }
   }
 `;

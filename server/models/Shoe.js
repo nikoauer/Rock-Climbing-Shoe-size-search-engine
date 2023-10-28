@@ -8,6 +8,9 @@ const ShoeSchema = new Schema(
         Model: {
             type: String
         },
+        Photo: {
+            type: String
+        },
         Details: {
             type: String
         },
@@ -34,7 +37,7 @@ const ShoeSchema = new Schema(
         },
         Width: {
             type: String
-        }
+        },
     });
 
 const Shoes = model('Shoes', ShoeSchema);

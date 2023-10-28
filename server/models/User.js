@@ -22,16 +22,9 @@ const userSchema = new Schema(
             required: true,
             minlength: 6,
         },
-        // savedShoes: [shoeSchema],
     },
-    // {
-    //     toJSON: {
-    //         virtuals: true,
-    //     }
-    // }
 );
 
-//hash the password before saving it to the db
 userSchema.pre('save', async function (next) {
     if (this.isNew || this.isModified('password')) {
       const saltRounds = 10;
