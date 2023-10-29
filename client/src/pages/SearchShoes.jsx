@@ -89,7 +89,7 @@ export default function SearchShoes() {
                     <Card.Img variant="top" src={Photo}/>
                     <Card.Header id="title">Brand: {Brand} <br /> Model: {Model}</Card.Header>
                     <Card.Body className="body" id="information">
-                      <Card.Subtitle id="subtitle">Recommended Shoe Size:</Card.Subtitle>
+                      <Card.Subtitle id="subtitle">Recommended Shoe Size</Card.Subtitle>
                       <Card.Text id="contents">US Men's Size: {USMensSize}</Card.Text>
                       <Card.Text id="contents">US Women's Size: {USWomensSize}</Card.Text>
                       <Card.Text id="contents">Sole Size: {SoleSize} centimeters</Card.Text>

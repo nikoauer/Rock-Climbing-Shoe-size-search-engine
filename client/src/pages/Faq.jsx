@@ -1,4 +1,4 @@
-import { Card, Container, Row, Col, CardBody, CardText } from "react-bootstrap";
+import { Container, Row, Col, Accordion, AccordionItem } from "react-bootstrap";
 
 export default function faq() {
   return (
@@ -14,7 +14,7 @@ export default function faq() {
               So here are some answers to guide you in the right direction to
               finding the shoe right for you
             </h4>
-            <p>
+            <p id="introduction">
               Unlike sneakers or hiking boots, choosing a climbing shoe for the
               first time is more than looking at the "top 5 brands" or "best
               shoe for climbing". The best climbing shoe for your first pair is
@@ -30,13 +30,13 @@ export default function faq() {
               climbing shoe, identify your size and fit, and what else you need
               to consider when choosing a shoe that's right for you.
             </p>
-            <Card className="card-box">
-              <Card.Header>
+            <Accordion className="card-box" defaultActiveKey="0">
+            <Accordion.Item>
+              <Accordion.Header>
                 <h5>How tight should climbing shoes be at first?</h5>
-              </Card.Header>
-              <CardBody>
-                <CardText>
-                  If you asked someone about fitting shoes, they are going to
+              </Accordion.Header>
+              <Accordion.Body>
+                If you asked someone about fitting shoes, they are going to
                   say something like: “uncomfortable”, “tight but not painful”,
                   “snug” and “toes curled”. These are all used to describe a
                   position where all the toes are touching the front of the shoe
@@ -48,15 +48,15 @@ export default function faq() {
                   should never lie completely flat because your toes naturally
                   curl when the muscles engage, which will leave you with wiggle
                   room.
-                </CardText>
-              </CardBody>
-            </Card>
-            <Card className="card-box">
-              <Card.Header>
+              </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            <Accordion className="card-box" defaultActiveKey="0">
+              <Accordion.Item>
+              <Accordion.Header>
                 <h5>Why are curled toes important?</h5>
-              </Card.Header>
-              <CardBody>
-                <CardText>
+              </Accordion.Header>
+                <Accordion.Body>
                   Engaged, curled toes allows us to support our body weight on a
                   small surface area or edge. Your climbing shoe may feel tight
                   at first, but as it stretches, your toes will relax into the
@@ -65,15 +65,15 @@ export default function faq() {
                   to climb. Shoes that are too big will feel like they “slip”
                   off holds since your body weight is away from the front of the
                   shoe.​
-                </CardText>
-              </CardBody>
-            </Card>
-            <Card className="card-box">
-              <Card.Header>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            <Accordion className="card-box" flush defaultActiveKey="0">
+              <Accordion.Item>
+              <Accordion.Header>
                 <h5>How do I measure my foot?</h5>
-              </Card.Header>
-              <CardBody>
-                <CardText>
+              </Accordion.Header>
+              <Accordion.Body>
                   To measure your foot, first, grab a piece of paper and a pen.
                   Go stand next to a wall and put your paper up against the
                   wall. Stand on the paper, with your heel against the wall, and
@@ -85,15 +85,15 @@ export default function faq() {
                   your mondopoint. Now input your measurement in centermeters
                   into our calculator and you should recieve a list of options
                   that may suit your foot.
-                </CardText>
-              </CardBody>
-            </Card>
-            <Card className="card-box">
-              <Card.Header>
+              </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            <Accordion className="card-box" defaultActiveKey="0">
+            <Accordion.Item>
+              <Accordion.Header>
                 <h5>Will my shoes stretch?</h5>
-              </Card.Header>
-              <CardBody>
-                <CardText>
+              </Accordion.Header>
+              <Accordion.Body>
                   It’s worth remembering that, depending on the material of the
                   shoe, you will likely experience some stretch in your shoes.
                   At its most basic level, upper materials can be grouped into
@@ -110,15 +110,15 @@ export default function faq() {
                   consider if your uppers are lined or unlined. If an upper is
                   unlined, there will only be one layer of material, so it will
                   stretch more than its lined counterparts.
-                </CardText>
-              </CardBody>
-            </Card>
-            <Card className="card-box">
-              <Card.Header>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            <Accordion className="card-box" defaultActiveKey="0">
+              <Accordion.Item>
+              <Accordion.Header>
                 <h5>Are climbing all the same when it comes to sizing?</h5>
-              </Card.Header>
-              <CardBody>
-                <CardText>
+              </Accordion.Header>
+              <Accordion.Body>
                   Knowing the size of your foot is a good start but if you
                   really want to get the right size rock climbing shoes then you
                   will need to know how each brand sizes their shoes. Remember
@@ -133,15 +133,15 @@ export default function faq() {
                   run closer to your street shoe size and require less of a need
                   to down size. So do your research depending on the brand to
                   find the best and closest fit.
-                </CardText>
-              </CardBody>
-            </Card>
-            <Card className="card-box">
-              <Card.Header>
+              </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            <Accordion className="card-box"  defaultActiveKey="0">
+            <Accordion.Item>
+              <Accordion.Header>
                 <h5>Are some shoes better for some disciplines of climbing</h5>
-              </Card.Header>
-              <CardBody>
-                <CardText>
+              </Accordion.Header>
+                <Accordion.Body>
                   What style of climbing you intend on pursuing, and the
                   intensity at which you do it is another important factor you
                   will want to consider when deciding what size climbing shoe to
@@ -154,15 +154,15 @@ export default function faq() {
                   performance. Regardless of whether you want a performance or a
                   comfortable fit, just remember that your toes should never be
                   completely flat!
-                </CardText>
-              </CardBody>
-            </Card>
-            <Card className="card-box">
-              <Card.Header>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            <Accordion className="card-box" defaultActiveKey="0">
+              <Accordion.Item>
+              <Accordion.Header>
                 <h5>How do I know if my climbing shoe is the right size?</h5>
-              </Card.Header>
-              <CardBody>
-                <CardText>
+              </Accordion.Header>
+                <Accordion.Body>
                   Okay, so know how you have put the shoe properly, but how do
                   you know if it actually fits? After all, climbing shoes aren’t
                   meant to be like comfortable slippers, so what are the key
@@ -178,18 +178,18 @@ export default function faq() {
                   right size shoe you should instantly feel those tensioned
                   rubber rands keeping that shoe tightly compressed around your
                   foot.
-                </CardText>
-              </CardBody>
-            </Card>
-            <Card className="card-box">
-              <Card.Header>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+            <Accordion className="card-box" defaultActiveKey="0">
+              <AccordionItem>
+              <Accordion.Header>
                 <h5>
                   Is there a difference between high volume and low volume
                   shoes?
                 </h5>
-              </Card.Header>
-              <CardBody>
-                <CardText>
+              </Accordion.Header>
+              <Accordion.Body>
                   Since many men prefer the fit of “women’s” models and vice
                   versa, climbing companies are starting to shift away from
                   “men” and “women” labeling to using more descriptive titles
@@ -198,9 +198,9 @@ export default function faq() {
                   arch, as well as a medium to wide heel, you have a high-volume
                   foot. Low volume: If you have a narrow, slender foot and a
                   flat arch, with a narrow heel, you have a low-volume foot.
-                </CardText>
-              </CardBody>
-            </Card>
+              </Accordion.Body>
+              </AccordionItem>
+            </Accordion>
           </Col>
         </Row>
       </Container>
