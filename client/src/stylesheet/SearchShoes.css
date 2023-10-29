@@ -40,6 +40,7 @@ body {
 }
 #title {
     font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
 }
 
 #information {
@@ -47,6 +48,15 @@ body {
 }
 
 #subtitle{
-  font-weight: 700;
+  text-decoration: underline;
   padding-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#contents {
+  font-family: 'Lato', sans-serif;
+}
+
+#details {
+  font-family: 'Lato', sans-serif;
 }

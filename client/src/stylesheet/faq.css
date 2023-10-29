@@ -5,14 +5,26 @@
     border-radius: 10px;
 }
 
-.header {
-    color: red;
-}
-
 h1 {
     margin-top: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.accordionBody{
+    font-family: 'Lato', sans-serif;
 }
 
 #introduction {
+    font-size: 1.1em;
     margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
 }
+

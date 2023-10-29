@@ -35,7 +35,7 @@ export default function faq() {
               <Accordion.Header>
                 <h5>How tight should climbing shoes be at first?</h5>
               </Accordion.Header>
-              <Accordion.Body>
+              <Accordion.Body className="accordionBody">
                 If you asked someone about fitting shoes, they are going to
                   say something like: “uncomfortable”, “tight but not painful”,
                   “snug” and “toes curled”. These are all used to describe a
@@ -56,7 +56,7 @@ export default function faq() {
               <Accordion.Header>
                 <h5>Why are curled toes important?</h5>
               </Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body className="accordionBody">
                   Engaged, curled toes allows us to support our body weight on a
                   small surface area or edge. Your climbing shoe may feel tight
                   at first, but as it stretches, your toes will relax into the
@@ -73,7 +73,7 @@ export default function faq() {
               <Accordion.Header>
                 <h5>How do I measure my foot?</h5>
               </Accordion.Header>
-              <Accordion.Body>
+              <Accordion.Body className="accordionBody">
                   To measure your foot, first, grab a piece of paper and a pen.
                   Go stand next to a wall and put your paper up against the
                   wall. Stand on the paper, with your heel against the wall, and
@@ -93,7 +93,7 @@ export default function faq() {
               <Accordion.Header>
                 <h5>Will my shoes stretch?</h5>
               </Accordion.Header>
-              <Accordion.Body>
+              <Accordion.Body className="accordionBody">
                   It’s worth remembering that, depending on the material of the
                   shoe, you will likely experience some stretch in your shoes.
                   At its most basic level, upper materials can be grouped into
@@ -118,7 +118,7 @@ export default function faq() {
               <Accordion.Header>
                 <h5>Are climbing all the same when it comes to sizing?</h5>
               </Accordion.Header>
-              <Accordion.Body>
+              <Accordion.Body className="accordionBody">
                   Knowing the size of your foot is a good start but if you
                   really want to get the right size rock climbing shoes then you
                   will need to know how each brand sizes their shoes. Remember
@@ -141,7 +141,7 @@ export default function faq() {
               <Accordion.Header>
                 <h5>Are some shoes better for some disciplines of climbing</h5>
               </Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body className="accordionBody">
                   What style of climbing you intend on pursuing, and the
                   intensity at which you do it is another important factor you
                   will want to consider when deciding what size climbing shoe to
@@ -162,7 +162,7 @@ export default function faq() {
               <Accordion.Header>
                 <h5>How do I know if my climbing shoe is the right size?</h5>
               </Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body className="accordionBody">
                   Okay, so know how you have put the shoe properly, but how do
                   you know if it actually fits? After all, climbing shoes aren’t
                   meant to be like comfortable slippers, so what are the key
@@ -189,7 +189,7 @@ export default function faq() {
                   shoes?
                 </h5>
               </Accordion.Header>
-              <Accordion.Body>
+              <Accordion.Body className="accordionBody">
                   Since many men prefer the fit of “women’s” models and vice
                   versa, climbing companies are starting to shift away from
                   “men” and “women” labeling to using more descriptive titles
