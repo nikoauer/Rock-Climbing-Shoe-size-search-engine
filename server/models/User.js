@@ -1,7 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
-//import shoes saved from the schema modal
 const shoeSchema = require('./Shoe')
 
 const userSchema = new Schema(

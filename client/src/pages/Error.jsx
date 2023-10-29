@@ -13,7 +13,7 @@ export default function ErrorPage() {
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
-      <Button as={Link} to="/">Return Home</Button>
+      <Button variant="warning" as={Link} to="/">Return Home</Button>
     </div>
   );
 }

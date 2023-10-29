@@ -3,8 +3,6 @@ import { Container, Row, Col, Alert, Card } from "react-bootstrap";
 import { useLazyQuery } from "@apollo/client";
 import { GET_SHOES_BY_SIZE } from "../utils/queries";
 
-// import Auth from '../utils/auth';
-
 export default function SearchShoes() {
   const [searchInput, setSearchInput] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
