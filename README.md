@@ -16,6 +16,8 @@ Upon cloning or downloading this repository and opening this code in a code edit
 
 ## Usage
 
+Live Link: https://rockfit-v2-c707e0324da7.herokuapp.com/
+
 In order to use the project you can simply input the length of your foot in the search input and it should return shoe that has a matching sole size to you foot length, if not the error handling will inform the user that there are no shoes to match that size. There is also more information in the FAQ tab. 
 
 ![alt text](./screenshots/Screenshot1.png)
