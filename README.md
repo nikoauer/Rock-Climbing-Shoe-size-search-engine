@@ -1,4 +1,4 @@
-# <Shoe-Calculator>
+# <Shoe-Calculator-Rockfit>
 
 ## Description
 
